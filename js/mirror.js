@@ -460,7 +460,7 @@ var Sound = (function() {
 
 		// Generate sound with an oscillator
 		// and patch the output to the volume
-		oscillator.frequency.value = 220 + (Math.random() * 680) >> 0;
+		oscillator.frequency.value = 220 * (1 + Math.floor(Math.random() * 10) ) >> 0;
 		oscillator.connect(volume);
 		oscillator.type = 0;
 
